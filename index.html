@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD TASK</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/task.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12">
+          <h1 class="text-center text-light py-2 display-4 m-3">CRUD-OOP</h1>
+          <!-- <hr class="m-5"> -->
+        </div>
+      </div>
+
+      <div class="col col-sm-12">
+        <form
+          class="row p-3 my-3"
+          id="formstu"
+          style="
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 6px 25px black;
+          "
+        >
+          <div class="col col-sm-12">
+            <h2 class="text-start text-dark">Add New Student</h2>
+          </div>
+          <div class="col col-sm-4">
+            <div class="form-group">
+              <input
+                type="text"
+                required
+                class="form-control"
+                id="name"
+                placeholder="Your Name Here..."
+              />
+            </div>
+          </div>
+
+          <div class="col col-sm-4">
+            <div class="form-group">
+              <input
+                type="email"
+                required
+                class="form-control"
+                id="email"
+                placeholder="Your E-mail Here..."
+              />
+            </div>
+          </div>
+
+          <div class="col col-sm-4">
+            <div class="form-group">
+              <input
+                type="tel"
+                required
+                class="form-control"
+                id="mobile"
+                placeholder="Your Phone Number Here..."
+              />
+            </div>
+          </div>
+          <div class="col col-sm-12">
+            <div class="form-group m-3 d-flex justify-content-center">
+              <input
+                type="submit"
+                id="submit"
+                class="btn btn-dark btn-block"
+                value="ADD New Student"
+              />
+              <input type="hidden" id="contIdEdit" />
+            </div>
+          </div>
+        </form>
+        <hr class="m-5" />
+      </div>
+
+      <div class="col col-sm-12">
+        <h1 class="text-center display-4 text-light my-4">All Students</h1>
+        <table class="table table-striped" id="example">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>E-mail</th>
+              <th>Mobile</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- <tr>
+              <td>Jana Qoura</td>
+              <td>janaqoura@gmail.com</td>
+              <td>01095868612</td>
+              <td>
+                <button class="btn btn-danger delete text-center">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+                <button class="btn btn-primary edit text-center">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+              </td>
+            </tr> -->
+
+            <!-- <tr>
+              <td>Jana Qoura</td>
+              <td>janaqoura@gmail.com</td>
+              <td>01095868612</td>
+              <td>
+                <button class="btn btn-danger delete text-center">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+                <button class="btn btn-primary edit text-center">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/task.js"></script>
+  </body>
+</html>
